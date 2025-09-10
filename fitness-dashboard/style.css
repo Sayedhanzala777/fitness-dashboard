@@ -1,0 +1,66 @@
+
+body {
+  background:
+    linear-gradient(rgba(15,23,42,0.7), rgba(30,41,59,0.7)),
+    url('fitness-bg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  font-family: 'Poppins', sans-serif;
+  color: white;
+  min-height: 100vh;
+}
+
+
+.dashboard-card {
+  max-width: 650px;
+  width: 90%;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: rgba(30,41,59,0.85);
+  border-radius: 20px;
+  box-shadow: 0 15px 25px rgba(0,0,0,0.5);
+  transition: transform 0.3s ease;
+}
+.dashboard-card:hover {
+  transform: translateY(-5px);
+}
+
+
+input, select {
+  width: 100%;
+  padding: 0.8rem;
+  margin-top: 0.5rem;
+  border-radius: 12px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: white;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+input:focus, select:focus {
+  border-color: #3b82f6;
+  box-shadow: 0 0 10px #3b82f6;
+  outline: none;
+}
+
+button {
+  background: #3b82f6;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border: none;
+}
+button:hover {
+  background: #2563eb;
+  transform: scale(1.05);
+  box-shadow: 0 0 15px rgba(59,130,246,0.7);
+}
+
+#results {
+  background: rgba(30,41,59,0.9);
+  padding: 1.5rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+}
+

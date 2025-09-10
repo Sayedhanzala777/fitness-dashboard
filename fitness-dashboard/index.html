@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fitness Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="dashboard-card max-w-3xl mx-auto mt-10 p-8">
+    <h1 class="text-3xl font-bold text-center mb-6">🏋️ Fitness Dashboard</h1>
+
+    <!-- Form -->
+    <form id="fitnessForm" class="grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div>
+        <label class="block mb-1 font-medium">Weight (kg)</label>
+        <input type="number" id="weight" placeholder="e.g. 70" required>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Height (cm)</label>
+        <input type="number" id="height" placeholder="e.g. 170" required>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Age</label>
+        <input type="number" id="age" placeholder="e.g. 25" required>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Gender</label>
+        <select id="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Activity Level</label>
+        <select id="activity">
+          <option value="1.2">Sedentary</option>
+          <option value="1.375">Lightly Active</option>
+          <option value="1.55">Moderately Active</option>
+          <option value="1.725">Very Active</option>
+          <option value="1.9">Super Active</option>
+        </select>
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Goal</label>
+        <select id="goal">
+          <option value="maintain">Maintain Weight</option>
+          <option value="lose">Lose Weight</option>
+          <option value="gain">Gain Weight</option>
+        </select>
+      </div>
+    </form>
+
+    <div class="text-center mt-6">
+      <button id="calculateBtn">Calculate</button>
+    </div>
+
+    <div id="results" class="hidden mt-6 p-4 rounded-xl">
+      <h2 class="text-xl font-bold mb-2">📊 Results</h2>
+      <p id="bmiResult"></p>
+      <p id="calorieResult"></p>
+      <p id="macroResult"></p>
+      <p id="goalDesc" class="mt-2 font-semibold text-yellow-300"></p>
+      <p id="motivation" class="mt-2 font-semibold text-blue-300"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
